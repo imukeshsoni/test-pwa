@@ -26,5 +26,17 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-call",
+      "urls": ["https://jsonplaceholder.typicode.com/users"],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxAge": "12h",
+        "maxSize": 10,
+        "timeout": "5s"
+      }
+    }
   ]
 }
